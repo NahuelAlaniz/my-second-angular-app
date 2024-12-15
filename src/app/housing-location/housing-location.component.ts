@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-housing-location',
-  imports: [],
-  templateUrl: './housing-location.component.html',
+  imports: [CommonModule],
+  template: `
+     <p>housing-location works</p>`,
   styleUrl: './housing-location.component.css'
 })
-export class HousingLocationComponent {
-
-}
+export class HousingLocationComponent {}
