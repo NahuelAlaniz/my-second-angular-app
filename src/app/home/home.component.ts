@@ -13,7 +13,7 @@ import { Housinglocation } from '../housinglocation';
         <button class="primary" type="button">Search</button>
       </form>
       <section>
-        <app-housing-location></app-housing-location>
+        <app-housing-location [housingLocation]="housingLocation"]></app-housing-location>
       </section>
     </section>
   `,
