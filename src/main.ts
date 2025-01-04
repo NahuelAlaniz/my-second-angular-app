@@ -1,9 +1,11 @@
 import { bootstrapApplication, provideProtractorTestingSupport } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import {provideRouter} from '@angular/router';
+import { provideRouter } from '@angular/router';
 import routeConfig from './app/app.routes';
 
-
 bootstrapApplication(AppComponent, {
-  providers: [provideProtractorTestingSupport(), provideRouter(routeConfig)],
+  providers: [
+    provideProtractorTestingSupport(),
+    provideRouter(routeConfig), // Agregar rutas aquí
+  ],
 }).catch((err) => console.error(err));
